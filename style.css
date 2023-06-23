@@ -97,16 +97,17 @@ body {
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 .summary .title{
     color: var(--Dark-gray-blue);
     font-weight: 800;
+    margin-left: 40px;
     
 }
 .content{
     padding-top: 30px;
+    width: 288px;
+    margin: auto;
 }
 li{
     height: 56px;
@@ -158,5 +159,51 @@ li:nth-child(4){
     text-align: center;
     padding: 16px;
     border-radius:30px;
-    margin-top:38px;
+    margin-top:8px;
+}
+.btn:hover{
+    background-image: linear-gradient( hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+@media screen and (max-width:767px) {
+    body{
+        align-items: flex-start;
+    }
+    .container{
+        flex-direction: column;
+        width: 100%;
+        max-width: 375px;    
+        box-shadow: none;    
+    }
+    .title{
+        margin-top: 28px;
+    }
+    .card{
+        width: 100%;
+        border-radius: 0 0 30px 30px ;
+        
+    }
+    .summary{
+        width: 100%;
+    }
+    .circle{
+        width: 8.625rem;
+        height: 8.625rem;
+        margin-top: 1.6rem;
+    }
+    .score h1{
+        font-size: 3.4rem;
+        padding-top: 1.6rem;
+    }
+    .score-value{
+        font-size: 1.6rem;
+    }
+    .desc p{
+        font-size: 1rem;
+        margin-bottom: 2.2rem;
+    }
+    .title{
+        font-size: 1.3rem;
+        margin-top: 1.2rem;
+    }
 }
